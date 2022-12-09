@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kd Fitness</title>
+</head>
+<link rel="stylesheet" href="https://fonts.google.com/css?family=Ballo+Bhai&display=swap">
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /* CSS Reset */
+    body{
+        font-family: Sans-Serif;
+        margin: 0px;
+        padding: 0px;
+        background: url(img/lifter.jpg);
+        background-size: 1380px 820px;
+        background-repeat: no-repeat;
+    }
+    .header{
+        color: white;
+    }
+    .left{
+        position: absolute;
+        font-size: 12px;
+        line-height: 19px;
+        left: 34px;
+        top: 20px;
+        display: inline-block;
+        /* border: 2px solid red; */
+    }
+    .left img{
+        width: 90px;
+    }
+    .left div{
+        text-align: center;
+        font-family: Roboto,cursive;
+        font-size: large;
+    }
+    .mid{
+        display: block;
+        width: 40%;
+        margin: 29px auto;
+        /* border: 2px solid white; */
+
+    }
+    .right{
+        position: absolute;
+        right: 34px;
+        top: 43px;
+        display: inline-block;
+        /* border: 2px solid greenyellow; */
+    }
+    .navbar{
+        display: inline-block;
+    }
+    .navbar li{
+        display: inline-block;
+    }
+    .navbar li a{
+        font-size: 18px;
+        color: white;
+        text-decoration: none;
+        padding: 12px 11px;
+    }
+    .navbar li a:hover, .navbar li a.active{
+        text-decoration: underline;
+        color: gray;
+    }
+    .btn{
+        margin: 0px 9px;
+        color: white;
+        background-color: black;
+        padding: 3px 14px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        font-size: 15px ;
+        cursor: pointer;
+        font-family: Sans-Serif;
+
+    }
+    .btn:hover{
+        background-color: rgb(57, 55, 55);
+    }
+    .container{
+        color: aliceblue;
+        margin: 60px 80px;
+        padding: 30px;
+        width: 33%;
+        border-radius: 28px;
+        border: 2px solid white;
+    }
+    .formgroup input{
+        font-family: roboto;
+        text-align: center;
+        display: block;
+        width: 60%;
+        padding: 1px;
+        border: 2px solid black;
+        margin: 11px auto;
+        font-size: 12px;
+        border-radius: 8px;
+    }
+    .container h1{
+        text-align: center;
+        font-size: 30px;
+    }
+    .container button{
+        display: block;
+        width: 60%;
+        margin: 20px auto;
+    }
+</style>
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+           <img src="img/logo.png" alt="">
+           <div>Kd Fitness</div>
+        </div>
+        <!-- mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#"> Home</a></li>
+                <li><a href="#"> About Us</a></li>
+                <li><a href="#"> Fitness Calculator</a></li>
+                <li><a href="#"> Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- right box for buttons -->
+        <div class="right">
+           <button class="btn">Call Us</button>
+           <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+       <h1>Join the best Gym of Sonipat</h1>
+       <form action="noaction.php">
+        <div class="formgroup">
+            <input type="text" name="" placeholder="Enter Your Name">
+        </div>
+        <div class="formgroup">
+            <input type="text" name="" placeholder="Enter Your Age">
+        </div>
+        <div class="formgroup">
+            <input type="text" name="" placeholder="Enter Your Gender">
+        </div>
+        <div class="formgroup">
+            <input type="text" name="" placeholder="Enter Your Locality">
+        </div>
+        <div class="formgroup">
+            <input type="text" name="" placeholder="Enter Your Email">
+        </div>
+        <div class="formgroup">
+            <input type="text" name="" placeholder=" Enter Your Phone Number">
+        </div>
+        <button class="btn">Submit</button>
+       </form>
+    </div>
+    
+</body>
+</html>
